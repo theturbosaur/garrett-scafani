@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="section">
+	<div class="grid--fluid">
+		<div class="repeater-row--2 repeater-row@mobile--1 repeater-row@landscape--1">
+			{% for post in site.posts %}
+			<div class="box ratio--16-9">
+				<div class="container--absolute">
+					<div class="grid">
+						<div class="box span--12/12">
+							<div class="text-block color--white">
+								<h2 class="bg-color--smoked inline">{{ post.title }}</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<figure class="bg-block">
+					<img src="{{ post.featured-img }}">
+				</figure>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+		<nav class="bg-color--vantaBlack color--white p--sm" id="header" data-headroom>
+			Garrett Scafani
+		</nav>
+		{{ content }}
+		<script>
+			// simple as this!
+		// NOTE: init() is implicitly called with the plugin
+		$("#header").headroom();
+		</script>
+	</body>
+</html>

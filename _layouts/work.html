@@ -1,0 +1,30 @@
+---
+layout: default-header
+---
+
+
+
+<section class="section">
+	<div class="grid--fluid">
+		<div class="repeater-row--2 repeater-row@mobile--1 repeater-row@landscape--1 repeater-row@tablet--1 ">
+			{% for post in site.categories[page.category] %}
+			<div class="box ratio--16-9">
+				<a href="{{ post.url }}">
+					<div class="container--absolute">
+						<div class="grid h--100 p--sm">
+							<div class="box span--12/12 align-self--end">
+								<div class="text-block color--white">
+									<h2 class="bg-color--smoked inline p--xs">{{ post.title }}</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<figure class="bg-block">
+						<img src="{{ post.featured-img }}">
+					</figure>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

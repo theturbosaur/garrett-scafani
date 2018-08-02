@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<section class="section">
+	<div class="grid">
+		<div class="box col-start--1/12 col-end--5/12">
+			<div class="text-block color--white">
+				<figure class="img-block">
+					<img src="assets/svg/garrett-logo.svg">
+				</figure>
+			</div>
+		</div>
+		<div class="box col-start--7/12 col-end--12/12">
+
+			<div class="box p--sm mb--sm">
+				<a href="category/work.html">
+					<div class="text-block color--white">
+						<h2><strong>Work</strong></h2>
+					</div>
+					{% for post in site.categories['work'] limit:1 %}
+					<div class="text-block color--white mb--none mt--md">
+						<small>Latest Post</small>
+						<h4 class="mb--none">{{ post.title }}</h4>
+					</div>
+					<figure class="bg-block">
+						<img src="{{ post.featured-img }}">
+					</figure>
+					{% endfor %}
+				</a>
+			</div>
+
+			<div class="box p--sm mb--sm">
+				<a href="category/photography.html">
+					<div class="text-block color--white">
+						<h2><strong>Photography</strong></h2>
+					</div>
+					{% for post in site.categories['photography'] limit:1 %}
+					<div class="text-block color--white mb--none mt--md">
+						<small>Latest Post</small>
+						<h4 class="mb--none">{{ post.title }}</h4>
+					</div>
+					<figure class="bg-block">
+						<img src="{{ post.featured-img }}">
+					</figure>
+					{% endfor %}
+				</a>
+			</div>
+			<div class="box p--sm mb--sm">
+				<a href="category/blog.html">
+					<div class="text-block color--white">
+						<h2><strong>Blog</strong></h2>
+					</div>
+					{% for post in site.categories['blog'] limit:1 %}
+					<div class="text-block color--white mb--none mt--md">
+						<small>Latest Post</small>
+						<h4 class="mb--none">{{ post.title }}</h4>
+					</div>
+					<figure class="bg-block">
+						<img src="{{ post.featured-img }}">
+					</figure>
+					{% endfor %}
+				</a>
+			</div>
+
+
+		</div>
+	</div>
+
+</section>
+<figure class="bg-block bg-color--vantaBlack">
+		<img class="opacity--5" src="assets/pedal-board.gif">
+</figure>
