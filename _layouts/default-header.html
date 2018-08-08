@@ -3,9 +3,27 @@
 	{% include head.html %}
 	<body>
 		<nav class="bg-color--vantaBlack color--white p--sm" id="header" data-headroom>
-			Garrett Scafani
+			<div class="grid--fluid mb--none">
+				<div class="box col-start--1/12 col-end--2/12">
+					<figure class="img-block mb--none">
+						<img src="../assets/svg/garrett-logo.svg">
+					</figure>
+				</div>
+			</div>
 		</nav>
 		{{ content }}
+
+		<footer class="bg-color--vantaBlack p--sm">
+			<div class="grid mb--none">
+				<div class="box span--12/12">
+					<div class="text-block text-align--center">
+						<small class="color--white">
+							This is a footer
+						</small>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script>
 			// simple as this!
 		// NOTE: init() is implicitly called with the plugin
